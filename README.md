@@ -19,21 +19,27 @@ The code may not follow best practices or modern standards. It was made to pract
 
 Python-Games/<br>
 │<br>
-├── games.py          # Main script to start the games<br>
-├── menu.py           # GUI menu to select the game<br>
-├── snake.py          # Snake game logic<br>
-├── tic_tac_toe.py    # Tic Tac Toe game logic<br>
-├── space_invader.py  # Space Invaders game logic<br>
-└── utils.py          # Utility functions<br>
+├── games.py                  # Main script to start the games<br>
+├── menu.py                   # GUI menu to select the game<br>
+├── snake.py                  # Snake game logic<br>
+├── tic_tac_toe.py            # Tic Tac Toe game logic<br>
+├── space_invader.py          # Space Invaders game logic<br>
+└── utils.py                  # Utility functions<br>
 
 
-# Usage:
-After running games.py, a menu will appear allowing you to choose a game. Select a game by clicking the corresponding button.
+## Usage:
+After running `games.py`, a menu will appear allowing you to choose a game. Select a game by clicking the corresponding button.
 Controls for each game:<br>
 Snake -> arrow keys<br>
 Space Invader -> arrow keys, spacebar<br>
 Tic Tak Toe -> Mouse<br>
 
-# Additional Information:
+## Additional Information:
 This project was created several years ago as a learning exercise in Python programming.
 Some games have simple logic and can be improved or expanded.
+
+## Screenshots:
+
+<img width="899" height="1003" alt="snake" src="https://github.com/user-attachments/assets/075cee40-3a24-4765-a1f3-0383cec9206d" />
+
+<img width="900" height="1000" alt="space_invader" src="https://github.com/user-attachments/assets/b0e675bc-b882-40a5-9662-2c379a531713" />
