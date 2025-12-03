@@ -19,12 +19,12 @@ The code may not follow best practices or modern standards. It was made to pract
 ```
 Python-Games/<br>
 │<br>
-├── games.py                 # Main script to start the games<br>
-├── menu.py                  # GUI menu to select the game<br>
-├── snake.py                 # Snake game logic<br>
-├── tic_tac_toe.py           # Tic Tac Toe game logic<br>
-├── space_invader.py         # Space Invaders game logic<br>
-└── utils.py                 # Utility functions<br>
+├── games.py                 # Main script to start the games
+├── menu.py                  # GUI menu to select the game
+├── snake.py                 # Snake game logic
+├── tic_tac_toe.py           # Tic Tac Toe game logic
+├── space_invader.py         # Space Invaders game logic
+└── utils.py                 # Utility functions
 ```
 
 ## Usage:
