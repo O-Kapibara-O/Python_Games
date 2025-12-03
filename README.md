@@ -40,6 +40,6 @@ Some games have simple logic and can be improved or expanded.
 
 ## Screenshots:
 
-<img width="899" height="1003" alt="snake" src="https://github.com/user-attachments/assets/075cee40-3a24-4765-a1f3-0383cec9206d" />
+<img width="400" height="500" alt="snake" src="https://github.com/user-attachments/assets/075cee40-3a24-4765-a1f3-0383cec9206d" />
 
-<img width="900" height="1000" alt="space_invader" src="https://github.com/user-attachments/assets/b0e675bc-b882-40a5-9662-2c379a531713" />
+<img width="400" height="500" alt="space_invader" src="https://github.com/user-attachments/assets/b0e675bc-b882-40a5-9662-2c379a531713" />
