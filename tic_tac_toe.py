@@ -1,5 +1,5 @@
 
-from cgitb import text
+from utils import exit_funct_button
 import random
 from tkinter import *
 import menu
@@ -41,9 +41,9 @@ def draw(window,master_frame):
             buttons[row][column] = Button(frame,text="",width=20,height=10,command= lambda row=row,column=column :move(row,column,whose_turn_label))
             buttons[row][column].grid(row = row+1, column = column+1)
 
-def exit_funct_button(window,somthing_whats_gona_be_destroy):
-    somthing_whats_gona_be_destroy.destroy()
-    menu.draw_window(window)
+#def exit_funct_button(window,somthing_whats_gona_be_destroy):
+#    somthing_whats_gona_be_destroy.destroy()
+#    menu.draw_window(window)
 
 def move(row,column,label):
 

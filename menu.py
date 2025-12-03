@@ -8,9 +8,7 @@ WINDOW_HEIGHT = 900
 
 def get_window_object():
     window = Tk()
-
     window.title("Games")
-
     window.geometry(str(WINDOW_WIDTH)+"x"+str(WINDOW_HEIGHT))
     window.resizable(False,False)
     window.config(background="Blue")
@@ -19,17 +17,10 @@ def get_window_object():
 
 
 def draw_window(window):
-
-    
     
     window.title("Games")
     master_frame = Frame(window,background="grey")
     master_frame.pack(fill="both",expand=True)
-
-    
-    
-    
-
     choice_the_game_label = Label(master_frame,text="Choice the game",font=('consolas',40),fg="Red",pady=50,background="Grey")
     choice_the_game_label.pack()
 
@@ -44,7 +35,5 @@ def draw_window(window):
 
     space_invaders_button = Button(frame,text="Space invider",width=20,height=10,background="Yellow",activebackground="Yellow",command= lambda :space_invader.snake_game(window,master_frame))
     space_invaders_button.grid(row=0,column=2)
-
-
     window.mainloop()
 

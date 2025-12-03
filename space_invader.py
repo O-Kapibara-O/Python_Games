@@ -1,13 +1,9 @@
 
 import random
-from telnetlib import GA
-
-from tic_tac_toe import exit_funct_button
+from utils import exit_funct_button
 from tkinter import *
 GAMEOVER = False
 class Player:
-
-
     def __init__(self,canvas):
         self.health = 100
         self.size = 25
@@ -16,17 +12,12 @@ class Player:
         self.bulet_list =[]
         canvas.create_oval(self.coordinates[0],self.coordinates[1], self.coordinates[0]+self.size,self.coordinates[1]+self.size,fill="Cyan",tags="player")
 
-
     def shot(self):
-        
         global key_space_counter
         self.bulet_list.append(Bulet(self.coordinates[0]+self.size/4,self.coordinates[1]+self.size/4,key_space_counter))
         key_space_counter+=1
         
-
-
     def move(self,direction):
-        
         if direction =="left":
             self.direction = direction
         elif direction =="right":
@@ -51,8 +42,6 @@ class Enemy:
             self.number_of_shots +=1
         self.bulet_list.append(Bulet(self.coordinates[0]+self.size/4,self.coordinates[1]+self.size/4,self.number_of_shots))
 
-        #--------------------- tutaj chyba skonczylem
-
 class Bulet:
     
     def __init__(self,x,y,id): 
@@ -60,7 +49,6 @@ class Bulet:
         self.size = 12
         self.coordinates =[x,y]
         self.damage = 10
-        #self.direction ="up"
 
 def draw(window,canvas,player,enemy_list):
     
@@ -89,8 +77,6 @@ def draw(window,canvas,player,enemy_list):
         game_over(2)
         BackToTheMenu(window,canvas,"Over")
         
-#test
-
 def BackToTheMenu(window,canvas,result):
 
     canvas.destroy()
@@ -117,7 +103,6 @@ def draw_all_bullets_on_canvas(canvas,list_of_bulets,enemy_list):
             canvas.delete(name)
             bulet.coordinates[1] -=bulet.size
             canvas.create_oval(bulet.coordinates[0],bulet.coordinates[1], bulet.coordinates[0]+bulet.size,bulet.coordinates[1]+bulet.size,fill="Yellow",tags=name)
-    #tutaj chce dodac pentle dla pocisków enemy i pamietac od id dla canvas ze składa sie z 2 złożonych id
     if len(enemy_list) !=0:
         for enemy in enemy_list:
             if len(enemy.bulet_list) !=0:
@@ -199,7 +184,6 @@ def collision_detect(canvas,player,enemy_list):
 
     #-----------------------------------------------
 
-
 def create_enemy_list(canvas):
     
     copy_enemy_list =[]
@@ -210,7 +194,6 @@ def create_enemy_list(canvas):
     return copy_enemy_list
 
 def chance_to_shot(enemy_list):
-    #print(len(enemy_list))
     if len(enemy_list) !=0:
         for enemy in enemy_list:
             if random.randint(0,400)== 2:

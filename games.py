@@ -1,7 +1,4 @@
-
-
 import menu
-
 
 def main():
     menu.draw_window(menu.get_window_object())

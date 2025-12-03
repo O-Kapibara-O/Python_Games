@@ -2,7 +2,7 @@
 from random import randint, random
 from tkinter import *
 import random
-from tic_tac_toe import exit_funct_button
+from utils import exit_funct_button
 GAME_WIDTH = 900
 GAME_HEIGHT = 900
 SPEED = 50
@@ -30,17 +30,10 @@ class Snake():
 class Food():
 
     def __init__(self,canvas):
-
-
-        x = randint(0, (GAME_WIDTH/SPACE_SIZE)-1)*SPACE_SIZE
-        y = randint(0, (GAME_HEIGHT/SPACE_SIZE)-1)*SPACE_SIZE
-
+        x = randint(0, (GAME_WIDTH//SPACE_SIZE)-1)*SPACE_SIZE
+        y = randint(0, (GAME_HEIGHT//SPACE_SIZE)-1)*SPACE_SIZE
         self.coordinates = [x,y]
-
         canvas.create_oval( x, y, x + SPACE_SIZE, y + SPACE_SIZE,fill=FOOD_COLLOR,tags="food")
-
-
-
 
 def snake_game(window,master_frame):
     global direction
