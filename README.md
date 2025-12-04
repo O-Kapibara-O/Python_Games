@@ -17,8 +17,8 @@ The code may not follow best practices or modern standards. It was made to pract
 
 ## Project Structure:
 ```
-Python-Games/<br>
-│<br>
+Python-Games/
+│
 ├── games.py                 # Main script to start the games
 ├── menu.py                  # GUI menu to select the game
 ├── snake.py                 # Snake game logic
